@@ -1,0 +1,783 @@
+<html>
+    <head>
+        <title>FlipKart</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/6ec9c7cfba.js"
+            crossorigin="anonymous">
+    </script>
+    </head>
+    <body >
+
+<!--navbar flipcart-->
+
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark " style="background-color:2874f0;">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://content.couponspy.in/public/shop/240.jpg" alt="" width="70" height="70">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcontent" aria-controls="navbarcontent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+<!--for search button-->
+                
+                <input class="form-control md-5" style="width: 40%;" type="search" placeholder="Search for products,brands and more" aria-label="Search">
+                <button class="btn bg-white me-5" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+                
+                <div class="collapse navbar-collapse nav-fill" id="navbarcontent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+<!--Modal for login-->
+                    
+                        <li class="nav-item me-4">
+                            <button type="button" class="btn btn-light btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalex"><strong>Login</strong></button>  
+                        </li>
+        
+<!--nav items-->
+
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-dark" role="button" href="#"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" alt=""><b>Become a Seller</b> </a>
+                        </li>
+
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle text-dark" href="" id="navbardropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg" alt=""><b>More</b> 
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbardropdown">
+                                <li><a class="dropdown-item" href=""> Notification Preferences</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="">24x7 Customer Care</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Advertise</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Download App</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-dark " role="button" href="#"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" alt=""><b> Cart</b></a>
+                        </li>
+
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-dark " role="button" href="#"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg" alt=""></a>
+                        </li>
+                       
+                    </div>
+                    </ul>
+                
+                </div>
+            </div>
+        
+        </nav>
+        
+<!--modal for login page-->
+
+        <div class="modal fade" id="modalex" tabindex="-1" aria-labelledby="example"aria-hidden="true">
+            <div class="modal-dialog modal-lg ">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-lg-6  ">
+                                <img src="flip.png" alt="">
+                              </div>
+                              <div class="col-lg-6 ">
+                                <form>
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1"> <br><br>Enter Email/Mobile Number</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                      <small id="emailHelp" class="form-text text-muted"><br>By continuing, you agree to Flipkart's <a href=""> Terms of Use</a> and <a href="">Privacy Policy.</a></small>
+                                    </div>
+                                </form>
+                                <div>
+                                <button type="button" class="btn btn-danger">Request OTP</button>
+                                </div>
+                                <div class="footer-copyright text-center py-3">
+                                    <a href="#"> New to Flipkart? Create an Account</a>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+ <!--Second line-->
+
+        <div style="background-color: #f5f5f5;">
+            <div class="alert alert-light">
+                <div class="container-fluid">
+                    <ul class="nav nav-fill">
+                        <li class="nav-item">
+                        <a class="nav-link active text-dark" href="#"><b> Electronics</b></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" href="#"><b> TVs & Appliances</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><b> Men</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><b> Women</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><b> TVs & Appliances</b></a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link text-dark" href="#"><b> Baby & Kids</b></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" href="#"><b> Home & Furniture</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><b> Sports, Books & More</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><b>Flights</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><b> Offer Zone</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+        </div><br>
+
+        <!--split into 2 screens-->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2" style="background-color: #f5f5f5;">
+                    <h4>Filters</h4>
+                    <hr class="hr" />
+                    
+
+                    <!--items filter using accordion-->
+                    <div class="accordion accordion-flush" id="accordionex">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading1">
+                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                    Brands
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionex">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        MI
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                        OnePlus
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                        Iphone
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                        Vivo
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading2">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                    Customer Rating
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionex">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        4 &#10029; & above
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            3 &#10029; & above
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            2 &#10029; & above
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            1 &#10029; & above
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading3">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                    RAM
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionex">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        3 GB
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            4 GB
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            6 GB
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            8 GB
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            12  GB
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading4">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                    Battery Capacity
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionex">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        2000-3000 mAh
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            3000-4000 mAh
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            4000-5000 mAh
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            5000-6000 mAh
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            6000-7000 mAh
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading5">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                                    Screen Size
+                                </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionex">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        5.7-5.9 inch
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            5.9-6.1 inch
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            6.1-6.3 inch
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            6.3-6.5 inch
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            6.5-6.7 inch
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div> 
+
+                </div>
+
+                <div class="col-lg-10">
+                    <div class="container">
+
+                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item "><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
+                                <li class="breadcrumb-item active">item</li>
+                            </ol>
+                        </nav>
+                        <h5>Mi Mobiles</h5>
+
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sort By</a>
+                              </li>
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Popularity</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Price--low to high</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Price--high to low</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Newest First</a>
+                            </li>
+                          </ul><br>
+
+                          <a href="product.html" class="text-dark text-decoration-none">
+                          <div class="row">
+                            
+                            <div class="col-4 col-lg-3">
+                                <img src="https://rukminim2.flixcart.com/image/312/312/ktbu6q80/mobile/s/j/e/10-prime-10-redmi-original-imag6pbabybzmrhn.jpeg?q=70" alt="">
+                            </div>
+                            <div class="col-4 col-lg-6">
+                                <h4>Redmi 10 Prime(phantom Black,64 GB)</h4>
+                                
+                                    <button class="btn btn-success">4.2 &#10029;</button>
+                                    <small>210 Rating and 10 Reviews <br></small> 
+                                    <br>&#8226; 4 GB RAM|64 GB ROM
+                                    <br>&#8226; 8 MP Rear Camera
+                                    <br>&#8226; 6000 Mah Battery
+                                    <br>&#8226; 1 Year Warranty
+                                    <br>&#8226; 6.5 inch Display
+                            
+                            </div>
+                            <div class="col 4 col-lg-3">
+                                <h3>&#8377  11983 &nbsp;&nbsp; <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" class="" style="width: 30%; height: 7%;" alt=""></h3>
+                                <del>&#8377  13983</del> <small class="text-success">&nbsp; 25% off </small><br> 
+                                <small>Free Delivery by <b>Today</b></small>
+                                <h6 class="text-success">Bank Offer</h6>
+                            </div>
+                          </div></a>
+
+                          <hr class="hr" />
+                    </div>
+                </div>  
+
+            </div>
+        </div>
+
+        <!--next item-->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2" style="background-color: #f5f5f5;">     
+                </div>
+
+                <div class="col-lg-10">
+                    <div class="container"> 
+                        <a href="product.html" class="text-dark text-decoration-none">
+
+                          <div class="row">
+                            <div class="col-4 col-lg-3">
+                                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/g/k/-original-imageyuud3bey9hh.jpeg?q=70" alt="">
+                            </div>
+                            <div class="col-4 col-lg-6">
+                                <h4>Redmi 6(GOld,128 GB)</h4>
+                                
+                                    <button class="btn btn-success">3.5 &#10029;</button>
+                                    <small>150 Rating and 10 Reviews <br></small> 
+                                    <br>&#8226; 6 GB RAM|128 GB ROM
+                                    <br>&#8226; 16 MP Rear Camera
+                                    <br>&#8226; 5000 Mah Battery
+                                    <br>&#8226; 1 Year Warranty
+                                    <br>&#8226; 5.8 inch Display
+                            
+                            </div>
+                            <div class="col 4 col-lg-3">
+                                <h3>&#8377  8999 &nbsp;&nbsp; <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" class="" style="width: 30%; height: 7%;" alt=""></h3>
+                                <del>&#8377  11999</del> <small class="text-success">&nbsp; 15% off </small><br> 
+                                <small>Free Delivery by <b>Today</b></small>
+                                <h6 class="text-success">Bank Offer</h6>
+                            </div>
+                          </div></a>
+
+                          <hr class="hr" />
+                    </div>
+                </div>  
+                
+            </div>
+        </div>
+
+
+        <!--next item-->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2" style="background-color: #f5f5f5;">     
+                </div>
+
+                <div class="col-lg-10">
+                    <div class="container"> 
+                        <a href="product.html" class="text-dark text-decoration-none">
+
+                          <div class="row">
+                            <div class="col-4 col-lg-3">
+                                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/e/y/b/-original-imageftfzx8gfkys.jpeg?q=70" alt="">
+                            </div>
+                            <div class="col-4 col-lg-6">
+                                <h4>Redmi 9A Spot(Black,256 GB)</h4>
+                                
+                                    <button class="btn btn-success">4.2 &#10029;</button>
+                                    <small>386 Rating and 10 Reviews <br></small> 
+                                    <br>&#8226; 8 GB RAM|256 GB ROM
+                                    <br>&#8226; 32 MP Rear Camera
+                                    <br>&#8226; 4500 Mah Battery
+                                    <br>&#8226; 1 Year Warranty
+                                    <br>&#8226; 6.5 inch Display
+                            
+                            </div>
+                            <div class="col 4 col-lg-3">
+                                <h3>&#8377  21999 &nbsp;&nbsp; <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" class="" style="width: 30%; height: 7%;" alt=""></h3>
+                                <del>&#8377  24999</del> <small class="text-success">&nbsp; 25% off </small><br> 
+                                <small>Free Delivery by <b>Today</b></small>
+                                <h6 class="text-success">Bank Offer</h6>
+                            </div>
+                          </div></a>
+
+
+                          <hr class="hr" />
+                    </div>
+                </div>  
+                
+            </div>
+        </div>
+        
+        <!--next item-->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2" style="background-color: #f5f5f5;">     
+                </div>
+
+                <div class="col-lg-10">
+                    <div class="container"> 
+                        <a href="product.html" class="text-dark text-decoration-none">
+
+                          <div class="row">
+                            <div class="col-4 col-lg-3">
+                                <img src="https://rukminim2.flixcart.com/image/312/312/kq6yefk0/mobile/b/2/f/11-lite-m2101k9ai-mi-original-imag496egxryygvz.jpeg?q=70" alt="">
+                            </div>
+                            <div class="col-4 col-lg-6">
+                                <h4>MI 11 Lite(Black,256 GB)</h4>
+                                
+                                    <button class="btn btn-success">4.2 &#10029;</button>
+                                    <small>386 Rating and 10 Reviews <br></small> 
+                                    <br>&#8226; 8 GB RAM|256 GB ROM
+                                    <br>&#8226; 32 MP Rear Camera
+                                    <br>&#8226; 4500 Mah Battery
+                                    <br>&#8226; 1 Year Warranty
+                                    <br>&#8226; 6.5 inch Display
+                            
+                            </div>
+                            <div class="col 4 col-lg-3">
+                                <h3>&#8377  21999 &nbsp;&nbsp; <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" class="" style="width: 30%; height: 7%;" alt=""></h3>
+                                <del>&#8377  24999</del> <small class="text-success">&nbsp; 25% off </small><br> 
+                                <small>Free Delivery by <b>Today</b></small>
+                                <h6 class="text-success">Bank Offer</h6>
+                            </div>
+                          </div></a>
+
+                          <hr class="hr" />
+                    </div>
+                </div>  
+                
+            </div>
+        </div>
+
+        
+        <!--list of items 7-->
+
+        <div class="container-fluid" style="background-color: #ebefe8;">
+            <div class="container-fluid">
+                <h4>Top:Stories : Brand Directory</h4>
+                
+                    <a href="" class="text-dark text-decoration-none"><p><h6>Best selling products</h6>Pet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessories
+                        Pet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessories
+                    </p>
+                    <p>Pet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessories
+                        Pet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessories
+                    </p>
+                    <p>Pet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessories
+                        Pet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessories
+                    </p></a>
+                
+            </div>
+        </div>
+
+
+<!-- Footer -->
+        <small>
+        <footer class="bg-dark text-center text-white">
+            <div class="container p-4">
+            <section class="">
+                <div class="row">
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                   <small>ABOUT</small>
+                    <ul class="list-unstyled mb-0"><b>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none"><br> Contact Us </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">Flipcart</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">Press</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">Wholesale</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">Corporate</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">Information</a>
+                    </li></b>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <Small>HELP</Small>
+                    <ul class="list-unstyled mb-0">
+                    <li><b>
+                        <a href="#" class="text-white text-decoration-none"><br> Payments</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">Shipping</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">Cancellation</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">&Return</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">FaQ</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">Report</a>
+                    </li></b>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                   <small>CUSTOMER POLICY</small>  
+                    <ul class="list-unstyled mb-0"><b>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none"><br> Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">Flipcart</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">Press</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">Wholesale</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">Corporate</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white text-decoration-none">Information</a>
+                    </li></b>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <small>SOCIAL</small> 
+                    <ul class="list-unstyled mb-0"><b>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none"><br> Payments</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Shipping</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Cancellation</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">&Return</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">FaQ</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Report</a>
+                        </li></b>
+                    
+                    </ul>
+                
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <small> MAIL US:</small> 
+                    <ul class="list-unstyled mb-0"><b>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none"><br>Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Flipcart</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Press</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Wholesale</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Corporate</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Information</a>
+                        </li></b>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <small>REGISTERED OFFICE ADDRESS</small>
+                    <ul class="list-unstyled mb-0"><b>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none"><br> Payments</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Shipping</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Cancellation</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">&Return</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">FaQ</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Report</a>
+                        </li></b>
+                    </ul>
+                </div>
+                </div>
+            </section>
+            </div>
+            </small>
+            
+            <hr class="hr" />
+            
+            <div class="container-fluid bg-dark" >
+                <ul class="nav nav-fill">
+                    <li class="nav-item ">
+                    <a class="nav-link active text-white" aria-current="page" href="#"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-9de8ef.svg" alt=""> Become a Seller</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="#"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-image-866c0b.svg" alt=""> Advertise</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="#"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/gift-cards-image-d7ff24.svg" alt="">Gift Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/help-centre-image-c4ace8.svg" alt=""> Help Center</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">  @ 2007-2023 Flipkart.com</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"> <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg" alt=""></a>
+                    </li>  
+                
+                </ul>
+            </div>
+        </footer>
+
+
+
+
+
+
+    </body>
+</html>

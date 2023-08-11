@@ -1,0 +1,683 @@
+<html>
+    <head>
+        <title>FlipKart</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/6ec9c7cfba.js"
+            crossorigin="anonymous">
+    </script>
+    </head>
+    <body style="background-color: #f5f5f5;" >
+
+
+        <!--navbar flipcart-->
+
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark " style="background-color:2874f0;">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://content.couponspy.in/public/shop/240.jpg" alt="" width="70" height="70">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcontent" aria-controls="navbarcontent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+<!--for search button-->
+                
+                <input class="form-control md-5" style="width: 40%;" type="search" placeholder="Search for products,brands and more" aria-label="Search">
+                <button class="btn bg-white me-5" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+                
+                <div class="collapse navbar-collapse nav-fill" id="navbarcontent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+<!--Modal for login-->
+                    
+                        <li class="nav-item me-4">
+                            <button type="button" class="btn btn-light btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalex"><strong>Login</strong></button>  
+                        </li>
+        
+<!--nav items-->
+
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-dark" role="button" href="#"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" alt=""><b>Become a Seller</b> </a>
+                        </li>
+
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle text-dark" href="" id="navbardropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg" alt=""><b>More</b> 
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbardropdown">
+                                <li><a class="dropdown-item" href=""> Notification Preferences</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="">24x7 Customer Care</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Advertise</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Download App</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-dark " role="button" href="#"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" alt=""><b> Cart</b></a>
+                        </li>
+
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-dark " role="button" href="#"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg" alt=""></a>
+                        </li>
+                       
+                    </div>
+                    </ul>
+                
+                </div>
+            </div>
+        
+        </nav>
+        
+        <!--modal for login page-->
+
+        <div class="modal fade" id="modalex" tabindex="-1" aria-labelledby="example"aria-hidden="true">
+            <div class="modal-dialog modal-lg ">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-lg-6  ">
+                                <img src="flip.png" alt="">
+                              </div>
+                              <div class="col-lg-6 ">
+                                <form>
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1"> <br><br>Enter Email/Mobile Number</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                      <small id="emailHelp" class="form-text text-muted"><br>By continuing, you agree to Flipkart's <a href=""> Terms of Use</a> and <a href="">Privacy Policy.</a></small>
+                                    </div>
+                                </form>
+                                <div>
+                                <button type="button" class="btn btn-danger">Request OTP</button>
+                                </div>
+                                <div class="footer-copyright text-center py-3">
+                                    <a href="#"> New to Flipkart? Create an Account</a>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+ <!--Second line-->
+
+        <div style="background-color: #f5f5f5;">
+            <div class="alert alert-light">
+                <div class="container-fluid">
+                    <ul class="nav nav-fill">
+                        <li class="nav-item">
+                        <a class="nav-link active text-dark" href="item.html"><b> Electronics</b></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" href="item.html"><b> TVs & Appliances</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="item.html"><b> Men</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="item.html"><b> Women</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="item.html"><b> TVs & Appliances</b></a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link text-dark" href="item.html"><b> Baby & Kids</b></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" href="item.html"><b> Home & Furniture</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="item.html"><b> Sports, Books & More</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="item.html"><b>Flights</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="item.html"><b> Offer Zone</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+        </div><br>
+
+
+        <div class="container bg-light">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="https://rukminim2.flixcart.com/image/416/416/ktszgy80/mobile/5/u/g/10-prime-21061119bi-redmi-original-imag72kcm2uyaqjt.jpeg?q=70" alt="">
+                    <div class="d-grid gap-2 d-md-block " align="center"><br>
+                        <button type="button" class="btn btn-warning btn-lg " data-bs-toggle="modal" data-bs-target="#modalex"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" alt=""> Add to Cart</button>
+                        <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#modalex"><i class="fas fa-bolt"></i> Buy Now!</button>
+                    </div>
+                
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="container-fluid">
+                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item "><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
+                                <li class="breadcrumb-item "><a href="item.html" class="text-dark text-decoration-none">item</a></li>
+                                <li class="breadcrumb-item active">Product</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="container-fluid">
+                        <h4>Redmi 10 Prime(phantom Black,64 GB)</h4>
+                        <div class="container-fluid">
+
+                            <h3>&#8377  11983 &nbsp;&nbsp; <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" class="" style="width: 15%; height: 2%;" alt=""></h3>
+                                <del>&#8377  13983</del> <small class="text-success">&nbsp; 25% off </small><br> 
+                                <small>Free Delivery by <b>Today</b></small>
+                                <h6 class="text-success">Bank Offer</h6>
+                        </div>
+                        <div class="container-fluid">  
+                                    <button class="btn btn-success">4.2 &#10029;</button>
+                                    <small>210 Rating and 10 Reviews </small> 
+                                    <small>
+                                    
+                                        <h6> <br>Available Offers</h6>
+                                        <img src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90" alt=""><b>Bank Offer</b> Flat ₹1,250 Off on Bank Credit Card EMI Trxns on orders priced between ₹15,000 to ₹39,999 <a href="" class="text-decoration-none"><b> T&C <br></b></a>
+                                        <img src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90" alt=""><b>Bank Offer</b> Flat ₹3,000 Off on Bank Credit Card EMI Trxns on orders priced between ₹40,000 to ₹49,999<a href="" class="text-decoration-none"><b> T&C <br></b></a>
+                                        <img src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90" alt=""><b>Bank Offer</b> Flat ₹3,000 Off on Bank Credit Card EMI Trxns on orders priced between ₹40,000 to ₹49,999<a href="" class="text-decoration-none"><b> T&C <br></b></a>
+                                        <a href="" class="text-decoration-none"><b> View More Offers <br></b></a>
+                                </small>
+                         </div>  
+                    </div><br>
+                    <div class="container">
+                        <ul class="list-group">
+                            <li class="list-group-item "><h4>Product Description</h4></li>
+                            <div class="row">
+                            <li class="list-group-item col-lg-8 border-end-0" ><h5>Powerful Battery</h5> <p>Thanks to its 6000 mAh battery, the Redmi 10 Prime Smartphone offers a long battery life. So, you can juice it up and use it throughout the day without interrupting your work or entertainment. And, with 18 W fast charging, it quickly gets charged up so that you won’t have to keep it on charge for hours.</p></li>
+                            <li class="list-group-item col-lg-4 border-start-0" ><img src="https://rukminim2.flixcart.com/image/200/200/cms-rpd-img/bb5e1c80020a43b6ab7cc5f39b602975_18708c1b957_MOBGK2GF23QESG7K_1.png?q=90" alt=""></li>
+                            </div>
+                            <div class="row ">
+                                <li class="list-group-item col-lg-4 border-end-0"><img src="https://rukminim2.flixcart.com/image/200/200/cms-rpd-img/a494d1d3c67e4ff181324595ce580eae_18708c1d14c_MOBGK2GF23QESG7K_3.jpg.jpeg?q=90" alt=""></li>
+                                <li class="list-group-item col-lg-8 border-start-0"><h5>Storage and Speed</h5> <p>With up to 4 GB of RAM and up to 64 GB of internal storage, this smartphone lets you enjoy a smooth user experience while also storing your videos, pictures, files, and much more. So, you can carry all your data along wherever you go.</p></li>
+                                </div>
+                            <li class="list-group-item"><a href="" class="text-decoration-none">View all Features</a> </li>
+                          </ul>
+                    </div><br>
+                    <div class="container " >
+                        <ul class="list-group " >
+                            <li class="list-group-item " ><h4>Specification</h4></li>
+                            
+                            <div class="row " >
+                                <li class="list-group-item col-lg-4 border-end-0" > <p>In the box</p></li>
+                                <li class="list-group-item col-lg-8 border-start-0" >Handset, Adapter, USB Type-C Cable, Soft Case, SIM Eject Tool, User Guide, Warranty Card</li>
+                            </div>
+                            <div class="row ">
+                                <li class="list-group-item col-lg-4 border-end-0"> <p>Model Number</p></li>
+                                <li class="list-group-item col-lg-8 border-start-0">21061119BI/220233L2I</li>
+                            </div>
+                            <div class="row ">
+                                <li class="list-group-item col-lg-4 border-end-0" > <p>Modal Name</p></li>
+                                <li class="list-group-item col-lg-8 border-start-0" >Redmi 10 Prime</li>
+                            </div>
+                            <div class="row ">
+                                <li class="list-group-item col-lg-4 border-end-0" > <p>Color</p></li>
+                                <li class="list-group-item col-lg-8 border-start-0" >Phantom Black</li>
+                            </div>
+                            <div class="row ">
+                                <li class="list-group-item col-lg-4 border-end-0" > <p>Browser Type</p></li>
+                                <li class="list-group-item col-lg-8 border-start-0" >Smart Phone</li>
+                            </div>
+                            <li class="list-group-item"><a href="" class="text-decoration-none">View all Features</a> </li>
+                            
+                          </ul>
+                    </div><br>
+
+                    <div class="container">
+                        <ul class="list-group">
+                            <li class="list-group-item"><h4>Rating & Reviews</h4></li>
+
+                            <li class="list-group-item">
+                                <span>5  &#10029;</span><div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <span>4  &#10029;</span><div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <span>3  &#10029;</span><div class="progress">
+                                    </span><div class="progress-bar bg-success" role="progressbar" style="width: 15%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <span>2  &#10029;</span><div class="progress">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 450%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <span>1  &#10029;</span><div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 35%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                            </li>
+                            <li class="list-group-item"> <button class="btn btn-success">4.2 &#10029;</button> <span><b>value for money</b></span><br>
+                                <p>Very nice and beautiful <br></p>
+                                <small><b>Rajeev kumar tiwary  5 months Ago</b></small>
+                            </li>
+                            <li class="list-group-item"> <button class="btn btn-warning">2.5 &#10029;</button> <span><b>value for money</b></span><br>
+                                <p>Very nice and beautiful <br></p>
+                                <small><b>Rajeev kumar tiwary  5 months Ago</b></small>
+                            </li>
+                            <li class="list-group-item"> <button class="btn btn-success">4.5 &#10029;</button> <span><b>value for money</b></span><br>
+                                <p>Very nice and beautiful <br></p>
+                                <small><b>Rajeev kumar tiwary  5 months Ago</b></small>
+                            </li>
+                            <li class="list-group-item"> <button class="btn btn-danger">1.7 &#10029;</button> <span><b>value for money</b></span><br>
+                                <p>Very nice and beautiful <br></p>
+                                <small><b>Rajeev kumar tiwary  5 months Ago</b></small>
+                            </li>
+
+                            <li class="list-group-item"><a href="" class="text-decoration-none">View all Reviews</a> </li>
+                            
+                          </ul>
+                    </div><br>
+
+                    <div class="container">
+                        <ul class="list-group">
+                            <li class="list-group-item"><h4>Questions and Answers</h4></li>
+
+                            <li class="list-group-item"> 
+                                <h6>Q:Charging kitna word ka hai</h6>
+                                <p>A:Yes you can play in this phone</p>
+                                <small><i class='far fa-user'></i> Rajeev kumar tiwary  5 months Ago</small>
+                                <p class="text-end"><i class="fa fa-thumbs-up m-3"> 29</i> <i class="fa fa-thumbs-down"> 16</i> </p> 
+
+                            </li>
+                            <li class="list-group-item"> 
+                                <h6>Q:Front selfy camra...?</h6>
+                                <p>A:8MP</p>
+                                <small><i class='far fa-user'></i> Rajeev kumar tiwary  5 months Ago</small>
+                                <p class="text-end"><i class="fa fa-thumbs-up m-3"> 34</i> <i class="fa fa-thumbs-down"> 24</i> </p> 
+
+                            </li>
+                            <li class="list-group-item"> 
+                                <h6>Q:I can free fire no lag</h6>
+                                <p>A:Yes you can play in this phone</p>
+                                <small><i class='far fa-user'></i> Rajeev kumar tiwary  5 months Ago</small>
+                                <p class="text-end"><i class="fa fa-thumbs-up m-3"> 51</i> <i class="fa fa-thumbs-down"> 46</i> </p> 
+
+                            </li>
+                            <li class="list-group-item"> 
+                                <h6>Q:Charging kitna word ka hai</h6>
+                                <p>A:Yes you can play in this phone</p>
+                                <small><i class='far fa-user'></i> Rajeev kumar tiwary  5 months Ago</small>
+                                <p class="text-end"><i class="fa fa-thumbs-up m-3"> 49</i> <i class="fa fa-thumbs-down"> 06</i> </p> 
+                            </li>
+
+                            <li class="list-group-item"><a href="" class="text-decoration-none">See all Questions</a> </li>
+                            
+                          </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div><br><br>
+
+        <div class="container-fluid" style="background-color: white;">
+            <div class="row">
+                <div class="header">
+                    <h4>Recently Viewed  <div class="text-end"><a href="item.html"><button class="btn btn-primary btn-lg rounded-circle  " ><i class='fas fa-angle-right'></i></button></a></div></h4>
+                </div><br><br><br>
+                <div class="col-sm-2">
+                    <a href="item.html" class="text-decoration-none text-dark"><div class="card" style="width: 14rem;height:16rem;">
+                        <div class="card-body text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/l41n2q80/cap/b/v/w/free-pick-cutt-polo-store-original-imagff37w6rxhjr5.jpeg?q=70" class="card-img-top rounded mx-auto d-block" alt="">
+                            <p class="card-text ">Printers</p>
+                            <h5 class="card-title ">From &#8377; 2336</h5>
+                        </div>
+                    </div></a>
+                </div>
+
+                <div class="col-sm-2">
+                    <a href="item.html" class="text-decoration-none text-dark"><div class="card" style="width: 14rem;height: 16rem;">
+                        <div class="card-body text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/gas-stove/u/i/c/1-2-single-tornado-burner-isi-certified-sigri-wala-28-original-imaggnyvtam5mnc3.jpeg?q=70" class="card-img-top" alt="">
+                            <p class="card-text"><br>Printers</p>
+                            <h5 class="card-title">From &#8377 2336</h5>
+                        </div>
+                    </div></a>
+                </div>
+
+                <div class="col-sm-2">
+                    <a href="item.html" class="text-decoration-none text-dark"><div class="card" style="width: 14rem;height: 16rem;">
+                        <div class="card-body text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/l15bxjk0/car-pressure-washer/o/j/v/supreme-high-pressure-washer-1800-watts-120-bars-8-meters-outlet-original-imagcrw2gt8nznq5.jpeg?q=70" class="card-img-top" alt="">
+                            <p class="card-text"><br>Printers</p>
+                            <h5 class="card-title">From &#8377 2336</h5>
+                        </div>
+                    </div></a>
+                </div>
+
+                <div class="col-sm-2">
+                    <a href="item.html" class="text-decoration-none text-dark"><div class="card" style="width: 14rem;height: 16rem;">
+                        <div class="card-body text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/helmet/w/x/y/front-full-face-helmet-isi-certified-motorsports-motorbike-original-imagptw4c9qngpzz.jpeg?q=70" class="card-img-top" alt="">
+                            <p class="card-text">Printers</p>
+                            <h5 class="card-title">From &#8377 2336</h5>
+                        </div>
+                    </div></a>
+                </div>
+
+
+                <div class="col-sm-2">
+                    <a href="item.html" class="text-decoration-none text-dark"><div class="card" style="width: 14rem;height: 16rem;">
+                        <div class="card-body text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cycle/l/8/z/-original-imagghvxf5uct9vq.jpeg?q=70" class="card-img-top" alt="">
+                            <p class="card-text"><br>Printers</p>
+                            <h5 class="card-title">From &#8377 2336</h5>
+                        </div>
+                    </div></a>
+                </div>
+
+
+                <div class="col-sm-2">
+                    <a href="item.html" class="text-decoration-none text-dark"><div class="card" style="width: 14rem;height: 16rem;">
+                        <div class="card-body text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/m/n/t/7-1797-world-wear-footwear-white-original-imagktfpygtzgbbp.jpeg?q=70" class="card-img-top" alt="">
+                            <p class="card-text"><br><br> Printers</p>
+                            <h5 class="card-title">From &#8377 2336</h5>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="container-fluid" style="background-color: white;">
+            <div class="row">
+                <div class="header">
+                    <h4>Best of Products  <div class="text-end"><a href="item.html"><button class="btn btn-primary btn-lg rounded-circle  " ><i class='fas fa-angle-right'></i></button></a></div></h4>
+                </div><br><br><br>
+                <div class="col-sm-2">
+                    <a href="item.html" class="text-decoration-none text-dark"><div class="card" style="width: 14rem;height:16rem;">
+                        <div class="card-body text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/l41n2q80/cap/b/v/w/free-pick-cutt-polo-store-original-imagff37w6rxhjr5.jpeg?q=70" class="card-img-top rounded mx-auto d-block" alt="">
+                            <p class="card-text ">Printers</p>
+                            <h5 class="card-title ">From &#8377 2336</h5>
+                        </div>
+                    </div></a>
+                </div>
+
+                <div class="col-sm-2">
+                    <a href="item.html" class="text-decoration-none text-dark"><div class="card" style="width: 14rem;height: 16rem;">
+                        <div class="card-body text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/gas-stove/u/i/c/1-2-single-tornado-burner-isi-certified-sigri-wala-28-original-imaggnyvtam5mnc3.jpeg?q=70" class="card-img-top" alt="">
+                            <p class="card-text"><br>Printers</p>
+                            <h5 class="card-title">From &#8377 2336</h5>
+                        </div>
+                    </div></a>
+                </div>
+
+                <div class="col-sm-2">
+                    <a href="item.html" class="text-decoration-none text-dark"><div class="card" style="width: 14rem;height: 16rem;">
+                        <div class="card-body text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/l15bxjk0/car-pressure-washer/o/j/v/supreme-high-pressure-washer-1800-watts-120-bars-8-meters-outlet-original-imagcrw2gt8nznq5.jpeg?q=70" class="card-img-top" alt="">
+                            <p class="card-text"><br>Printers</p>
+                            <h5 class="card-title">From &#8377 2336</h5>
+                        </div>
+                    </div></a>
+                </div>
+
+                <div class="col-sm-2">
+                    <a href="item.html" class="text-decoration-none text-dark"><div class="card" style="width: 14rem;height: 16rem;">
+                        <div class="card-body text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/helmet/w/x/y/front-full-face-helmet-isi-certified-motorsports-motorbike-original-imagptw4c9qngpzz.jpeg?q=70" class="card-img-top" alt="">
+                            <p class="card-text">Printers</p>
+                            <h5 class="card-title">From &#8377 2336</h5>
+                        </div>
+                    </div></a>
+                </div>
+
+
+                <div class="col-sm-2">
+                    <a href="item.html" class="text-decoration-none text-dark"><div class="card" style="width: 14rem;height: 16rem;">
+                        <div class="card-body text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cycle/l/8/z/-original-imagghvxf5uct9vq.jpeg?q=70" class="card-img-top" alt="">
+                            <p class="card-text"><br>Printers</p>
+                            <h5 class="card-title">From &#8377 2336</h5>
+                        </div>
+                    </div></a>
+                </div>
+
+
+                <div class="col-sm-2">
+                    <a href="item.html" class="text-decoration-none text-dark"><div class="card" style="width: 14rem;height: 16rem;">
+                        <div class="card-body text-center">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/m/n/t/7-1797-world-wear-footwear-white-original-imagktfpygtzgbbp.jpeg?q=70" class="card-img-top" alt="">
+                            <p class="card-text"><br><br> Printers</p>
+                            <h5 class="card-title">From &#8377 2336</h5>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div><br>
+
+        <!--list of items 7-->
+
+        <div class="container-fluid" style="background-color: #ebefe8;">
+            <div class="container-fluid">
+                <h4>Top:Stories : Brand Directory</h4>
+                
+                    <a href="" class="text-dark text-decoration-none"><p><h6>Best selling products</h6>Pet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessories
+                        Pet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessoriesPet item|Handicrafts|Toys|Jewelry|Outdoor stuff| Home essentials|Kitchenware|Clothes|Electronic accessories|Beauty items|Fitness Equipment|Health supplement|Ayurvedic items|Baby care| Hair & Skin care|Electronic accessories
+                    </p>
+                    </a>
+                
+            </div>
+        </div>
+
+ <!-- Footer -->
+        <small>
+            <footer class="bg-dark text-center text-white">
+                <div class="container p-4">
+                <section class="">
+                    <div class="row">
+
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                       <small>ABOUT</small>
+                        <ul class="list-unstyled mb-0"><b>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none"><br> Contact Us </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Flipcart</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Press</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Wholesale</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Corporate</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Information</a>
+                        </li></b>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <Small>HELP</Small>
+                        <ul class="list-unstyled mb-0">
+                        <li><b>
+                            <a href="#" class="text-white text-decoration-none"><br> Payments</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Shipping</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Cancellation</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">&Return</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">FaQ</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Report</a>
+                        </li></b>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                       <small>CUSTOMER POLICY</small>  
+                        <ul class="list-unstyled mb-0"><b>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none"><br> Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Flipcart</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Press</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Wholesale</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Corporate</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white text-decoration-none">Information</a>
+                        </li></b>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <small>SOCIAL</small> 
+                        <ul class="list-unstyled mb-0"><b>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none"><br> Payments</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">Shipping</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">Cancellation</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">&Return</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">FaQ</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">Report</a>
+                            </li></b>
+                        
+                        </ul>
+                    
+                    </div>
+ 
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <small> MAIL US:</small> 
+                        <ul class="list-unstyled mb-0"><b>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none"><br>Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">Careers</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">Flipcart</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">Press</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">Wholesale</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">Corporate</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">Information</a>
+                            </li></b>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <small>REGISTERED OFFICE ADDRESS</small>
+                        <ul class="list-unstyled mb-0"><b>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none"><br> Payments</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">Shipping</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">Cancellation</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">&Return</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">FaQ</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">Report</a>
+                            </li></b>
+                        </ul>
+                    </div>
+                    </div>
+                </section>
+                </div>
+                </small>
+                
+                <hr class="hr" />
+                
+                <div class="container-fluid bg-dark" >
+                    <ul class="nav nav-fill">
+                        <li class="nav-item ">
+                        <a class="nav-link active text-white" aria-current="page" href="#"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-9de8ef.svg" alt=""> Become a Seller</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-image-866c0b.svg" alt=""> Advertise</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/gift-cards-image-d7ff24.svg" alt="">Gift Cards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/help-centre-image-c4ace8.svg" alt=""> Help Center</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">  @ 2007-2023 Flipkart.com</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#"> <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg" alt=""></a>
+                        </li>  
+                    
+                    </ul>
+                </div>
+            </footer>
+
+
+
+
+
+    </body>
+</html>
